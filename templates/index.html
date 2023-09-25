@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <title>Test Webpage</title>
+</head>
+<body>
+    <header>
+        <h1>Test Backend Webpage</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <h2>About Us</h2>
+        <p>This is a simple HTML webpage created for demonstration purposes.</p>
+        <!--
+        {% for post in posts %}
+            <a href="{{ url_for('post', post_id=post['id']) }}">
+                <h2>{{ post['title'] }}</h2>
+            </a>
+            <span class="badge badge-primary">{{ post['created'] }}</span>
+            <hr>
+        {% endfor %}
+        -->
+        <p>
+            This is how many times all users have pushed the button:  {{nums}}
+        </p>
+
+        <form method="post">
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Button</button>
+            </div>
+        </form>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Simple Webpage</p>
+    </footer>
+</body>
+</html>
+
